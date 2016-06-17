@@ -1,0 +1,38 @@
+﻿body {
+}
+.SpecialText{font-size:46px;color:#555555;text-align:center;padding:0px 10px 40px 10px;line-height:70px;}
+.SpecialText span{color:#389bf0;font-size:20px;line-height:30px;font-weight:bold;}
+.SpecialText strong{color:#0a8bcd;}
+
+.MainHolder{max-width:980px;padding:0 0 0 0px;}
+.FullWidth{background:#fff url('../Images/ColorBg.jpg') repeat-x center top;padding:40px 0;color:#161f32;}
+.FullWidthBlue{background:#e8ebf0 ;padding:40px 0;color:#000;border:solid 1px #8ed8e1;border-left:0px;border-right:0px;}
+.FullWidthOrange{background:#ffa018;padding:30px 0;color:white;font-size:30px;}
+.AdminLink{position:fixed;bottom:0px;left:5px;z-index:999;}
+
+
+.FormHolder{padding:30px 0;}
+.FormLeft{width:42%;float:left;}
+.FormRight{width:54%;float:right;}
+.FormRight img{max-width:99%;}
+.SmallTextbox,.SmallTextboxWaterMark,.SmallDropDown{width:97%;border:solid 2px #c8d68f;padding:1%;color:#161f32;height:40px; margin:0 0 10px 0;
+                                     font-family:Century Gothic;background:white;
+                                     border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.SmallDropDown{width:99%;height:50px;}
+.VisitBtn{background:#a4c618;color:White;padding:15px 00px;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
+          -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; transition: all 200ms linear; border:0px;
+          text-transform:uppercase;cursor:pointer;width:100%;}
+.VisitBtn:hover{background:#e97e30;}
+
+
+
+/*Pop Up*/
+.PopUpHolder{width:100%;height:100%;position:fixed;z-index:99991;background:red url('../Images/PopUpBg.png')repeat left top;
+top:0px;left:0px;}
+.PopupBlock{margin:5%;text-align:center;max-width:86%; max-height:77%;opacity:1.0;
+            -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; transition: all 200ms linear;}
+.PopupBlock img{max-width:100%;max-height:500px;background:#fff;border:solid 20px #fb8303;padding:10px;
+                border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;}
+.ClosePopUp{width:100%;height:28px;background:url('../Images/Close.png') no-repeat center center;position:relative;margin:-18px 0 0 0;
+            cursor:pointer;z-index:99999;}
+

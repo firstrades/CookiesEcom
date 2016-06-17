@@ -1,0 +1,161 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><RateReply xmlns="http://fedex.com/ws/rate/v18"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>crs</Source><Code>0</Code><Message>Request was successfully processed. </Message><LocalizedMessage>Request was successfully processed. </LocalizedMessage></Notifications><Version><ServiceId>crs</ServiceId><Major>18</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><RateReplyDetails><ServiceType>STANDARD_OVERNIGHT</ServiceType><PackagingType>YOUR_PACKAGING</PackagingType><DeliveryStation>BOMAD</DeliveryStation><DeliveryDayOfWeek>WED</DeliveryDayOfWeek><DeliveryTimestamp>2016-03-09T21:30:00</DeliveryTimestamp><CommitDetails><CommodityName>DOCUMENTS</CommodityName><ServiceType>STANDARD_OVERNIGHT</ServiceType><CommitTimestamp>2016-03-09T21:30:00</CommitTimestamp><DayOfWeek>WED</DayOfWeek><DestinationServiceArea>AA</DestinationServiceArea><BrokerToDestinationDays>0</BrokerToDestinationDays><DocumentContent>DOCUMENTS_ONLY</DocumentContent></CommitDetails><DestinationAirportId>BOM</DestinationAirportId><IneligibleForMoneyBackGuarantee>false</IneligibleForMoneyBackGuarantee><OriginServiceArea>AA</OriginServiceArea><DestinationServiceArea>AA</DestinationServiceArea><SignatureOption>SERVICE_DEFAULT</SignatureOption><ActualRateType>PAYOR_ACCOUNT_SHIPMENT</ActualRateType>
+<RatedShipmentDetails>
+<ShipmentRateDetail><RateType>PAYOR_ACCOUNT_SHIPMENT</RateType><RateScale>0000023</RateScale><RateZone>Z0104</RateZone><PricingCode>ACTUAL</PricingCode><RatedWeightMethod>ACTUAL</RatedWeightMethod><CurrencyExchangeRate><FromCurrency>INR</FromCurrency><IntoCurrency>INR</IntoCurrency><Rate>1.0</Rate></CurrencyExchangeRate><SpecialRatingApplied>FIXED_FUEL_SURCHARGE</SpecialRatingApplied><DimDivisor>0</DimDivisor>
+
+
+
+<FuelSurchargePercent>20.0</FuelSurchargePercent>
+<TotalBillingWeight>
+<Units>KG</Units>
+<Value>0.5</Value>
+</TotalBillingWeight>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TotalBaseCharge><Currency>INR</Currency><Amount>110.0</Amount></TotalBaseCharge>
+
+<TotalFreightDiscounts><Currency>INR</Currency><Amount>73.4</Amount></TotalFreightDiscounts>
+
+Transportation Cost (Total)
+<TotalNetFreight><Currency>INR</Currency><Amount>36.6</Amount></TotalNetFreight>
+
+Fuel + ODA + COD   (Additional Charge)
+<TotalSurcharges><Currency>INR</Currency><Amount>56.8</Amount></TotalSurcharges>
+
+Transportation Cost + (Fuel + ODA + COD)
+<TotalNetFedExCharge><Currency>INR</Currency><Amount>93.4</Amount></TotalNetFedExCharge>
+
+Taxes (Govt.)
+<TotalTaxes><Currency>INR</Currency><Amount>13.5</Amount></TotalTaxes>
+
+Transportation Cost + (Fuel + ODA + COD) + Taxes
+<TotalNetCharge><Currency>INR</Currency><Amount>106.9</Amount></TotalNetCharge>
+
+<TotalRebates><Currency>INR</Currency><Amount>0.0</Amount></TotalRebates>
+
+Duties (Govt.)
+<TotalDutiesAndTaxes><Currency>INR</Currency><Amount>0.0</Amount></TotalDutiesAndTaxes>
+
+
+
+Transportation Cost + Fuel + ODA + Taxes + Duties
+<TotalNetChargeWithDutiesAndTaxes>
+<Currency>INR</Currency>
+<Amount>106.9</Amount>
+</TotalNetChargeWithDutiesAndTaxes>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+All Break Up
+
+
+
+<FreightDiscounts>
+<RateDiscountType>VOLUME</RateDiscountType>
+<Description>Volume</Description>
+<Amount>
+<Currency>INR</Currency>
+<Amount>73.4</Amount>
+</Amount>
+<Percent>66.7</Percent>
+</FreightDiscounts>
+
+<Surcharges>
+	<SurchargeType>COD</SurchargeType>
+	<Description>Payment on delivery</Description>
+	<Amount>
+		<Currency>INR</Currency>
+		<Amount>49.5</Amount>
+	</Amount>
+</Surcharges>
+
+
+<Surcharge>
+     <SurchargeType>OUT_OF_DELIVERY_AREA</SurchargeType>
+     <Description>Out of delivery area</Description>
+     <Amount>
+        <Currency>INR</Currency>
+        <Amount>1600.0</Amount>
+     </Amount>
+</Surcharge>
+
+<Surcharges>
+	<SurchargeType>FEDEX_INTRACOUNTRY_FEES</SurchargeType>
+	<Description>Waybill</Description>
+	<Amount>
+		<Currency>INR</Currency>
+		<Amount>0.0</Amount>
+	</Amount>
+</Surcharges>
+
+<Surcharges>
+	<SurchargeType>FUEL</SurchargeType>
+	<Description>Fuel</Description>
+	<Amount>
+		<Currency>INR</Currency>
+		<Amount>7.3</Amount>
+	</Amount>
+</Surcharges>
+
+
+
+<Taxes>
+<TaxType>INTRACOUNTRY</TaxType>
+<Description>India Service Tax</Description>
+<Amount>
+<Currency>INR</Currency>
+<Amount>13.5</Amount>
+</Amount>
+</Taxes>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ShipmentRateDetail></RatedShipmentDetails></RateReplyDetails></RateReply></SOAP-ENV:Body></SOAP-ENV:Envelope>

@@ -1,0 +1,167 @@
+/*First and Last Menu*/
+/*.MainMenuItem{float:left;padding: 10px 12px 7px 12px; color: #fff;border-right: 1px solid #702232;font: normal 14px Arial; 
+line-height: 26px;text-transform:uppercase; }
+.MainMenuItem:hover{ color:#363636;text-shadow: none;background:white;}
+.LastMenu{float:right;padding:10px 10px 7px 25px;display:none;
+          background:#f79321 url('../../Images/SearchIcon.png') no-repeat 5px center;}
+*/
+
+
+/* Reset code to remove theme inherent styling */
+.dcjq-mega-menu ul.menu ul, .dcjq-mega-menu ul.menu li {
+list-style: none; 
+padding: 0; 
+margin: 0;text-align:left;
+}
+.dcjq-mega-menu ul.menu ul {
+display: none; /* Hides non-mega links */
+}
+.dcjq-mega-menu ul.menu .sub ul {
+display: block; /* overrides above hide */
+}
+
+/* Main menu styles */
+.dcjq-mega-menu ul.menu {
+padding:0px;margin:0px;
+float:left;
+position: relative; /* Important - required for positioning of mega menu */
+font: normal 12px Arial; 
+line-height: 26px;
+}
+.dcjq-mega-menu ul.menu li {
+font-weight: normal;
+float:left;
+}
+.dcjq-mega-menu ul.menu li a {
+
+display: block;  
+padding: 7px 8px 5px 8px; font-weight:bold;
+color: #fff;text-transform:uppercase;
+border-right: 1px solid #dc7303; 
+/*text-shadow: 1px 1px 1px #000; */
+text-decoration: none;
+}
+.dcjq-mega-menu ul.menu li.mega-hover a, .dcjq-mega-menu ul.menu li a:hover {
+ background:white;
+ color:#363636;
+text-shadow: none;
+}
+
+/* Arrow tag for parent links */
+.dcjq-mega-menu ul.menu li a.dc-mega {
+padding-right: 8px; /* Additional padding for arrow */
+position: relative; /* Required for arrow positioning */
+}
+.dcjq-mega-menu ul.menu li a .dc-mega-icon {
+display: block; 
+position: absolute; 
+top: 18px; 
+right: 2px; 
+width: 0px; 
+height: 6px; 
+background: url(../Pages/images/arrow.png) no-repeat 0 0;
+}
+.dcjq-mega-menu ul.menu li.mega-hover a .dc-mega-icon {
+background-position: 0 100%;
+}
+
+/* Mega Menu Styling */
+/* Mega Drop Down Container */
+.dcjq-mega-menu ul.menu li .sub-container {
+position: absolute; /* Required */
+background: white; 
+width:auto;width:984px;
+letter-spacing:0px;left:0px;
+margin:0 0 0 -2px;
+}
+.dcjq-mega-menu ul.menu li .sub 
+{
+border:solid 1px #fb8303;border-top:0px;box-shadow:0 4px 6px 3px #bababa;
+padding: 5px 10px 10px 10px;min-height:120px;
+}
+.dcjq-mega-menu ul.menu li .sub-container.mega .sub {
+padding: 0px 10px 0 0;
+}
+.dcjq-mega-menu ul.menu li .sub .row { /* Clear the sub-menu floats */
+width: 100%;overflow: hidden; 
+clear: both;
+}
+.dcjq-mega-menu ul.menu li .sub li {
+float: none; 
+font-size: 12px; 
+font-weight: 900;
+}
+/* Sub-menu Headers */
+.dcjq-mega-menu ul.menu li .sub li.mega-hdr { /* Sub-menu headers - i.e. 2nd level navigation */
+ /* Float the sub-menus and give them a fixed width to from the mega menu rows */
+max-height:200px;
+margin: 0 5px 5px 5px;
+}
+.dcjq-mega-menu ul.menu li .sub a { /* Clear the styles from the top-level links and set the font styles */
+
+background: none; 
+border: none; 
+text-shadow: none; 
+color: #111; 
+padding: 0px 0px 0 5px; 
+display: block; float:none;
+text-decoration: none; 
+font-size: 12px; 
+}
+.dcjq-mega-menu ul.menu li .sub li.mega-hdr a.mega-hdr-a {
+margin: 7px 0px 2px 0px; 
+text-transform: uppercase; 
+font-weight: 600;
+color: #f69110; background:#f3f3f3;
+/* background:#014a72 url(../images/MenuHeader.jpg) repeat left top; */
+
+}
+.dcjq-mega-menu ul.menu li .sub li.mega-hdr a.mega-hdr-a:hover {
+color: #83b307; 
+text-shadow: none;
+}
+
+
+/* Style the 3rd level links */
+
+.dcjq-mega-menu ul.menu li .sub li ul li {
+margin-right: 5px;margin-bottom:2px; float:left;width: 187px;
+}
+.dcjq-mega-menu ul.menu .sub li.mega-hdr li a {
+color: #444;font-size:11px;line-height:15px;
+font-weight: normal; text-transform:none;
+padding: 3px 0 3px 12px; 
+background: url(../Pages/images/bullet.png) no-repeat 2px 7px; 
+border:solid 1px #fefefe;
+}
+.dcjq-mega-menu ul.menu .sub li.mega-hdr li a:hover {
+color: #995900;
+background-image: url(../Pages/images/bullet_on.png); 
+border:solid 1px #cacaca;
+-webkit-box-shadow: 0px 0px 6px rgba(255, 181, 24, 0.6);
+                -moz-box-shadow: 0px 0px 6px rgba(255, 181, 24, 0.6);
+                -o-box-shadow: 0px 0px 6px rgba(255, 181, 24, 0.6);
+                box-shadow: 0px 0px 6px rgba(255, 181, 24, 0.6);
+}
+
+/* Styling for items with only 2 levels */
+.dcjq-mega-menu ul.menu li .sub-container.non-mega .sub {
+padding: 20px 20px 20px 10px;
+}
+.dcjq-mega-menu ul.menu li .sub-container.non-mega li {
+width: 220px; /* Set the drop down width */
+}
+.dcjq-mega-menu ul.menu li .sub-container.non-mega li a {
+padding: 7px 5px 7px 22px; 
+background: url(../Pages/images/bullet.png) no-repeat 5px 12px;
+}
+.dcjq-mega-menu ul.menu li .sub-container.non-mega li a:hover {
+color: #995900;
+background-image: url(../Pages/images/bullet_on.png);
+}
+
+.link{width:100%;}
+.dcjq-mega-menu ul.menu li div.link div a{color:#fff;}
+
+
+.ReadMore{color:red;}

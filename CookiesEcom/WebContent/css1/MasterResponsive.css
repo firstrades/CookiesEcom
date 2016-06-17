@@ -1,0 +1,31 @@
+﻿body {
+}
+@media (min-width:980px) and (max-width:1099px)
+{
+    .ddsmoothmenu ul li a{
+    padding:10px 8px;
+    font-size:13px;
+    }
+}
+@media  (max-width:979px)
+{
+    .ddsmoothmenu ul li a{
+    padding:10px 5px 10px 5px;
+    font-size:12px; }
+   
+}
+@media  (max-width:499px)
+{
+    .ddsmoothmenu ul li a{
+    padding:10px 3px 10px 3px;
+    font-size:11px; }
+    .FooterMenuHolder{float:none;width:100%;}
+    .FooterMenu{width:40%;}
+    .FooterText{float:none;width:100%;}
+    .Purple{float:none;width:100%;}
+    .LogoHolder{float:none;text-align:center;}
+    .LogoHolder img{max-width:100%;float:none;}
+    .SearchBlock{display:none;}
+    .AnimationHolder{display:none;}
+    .ContactInfo{font-size:15px;line-height:18px;}
+}
